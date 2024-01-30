@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="NextCrud - Works for create next innovation">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content=" Design By nextcrud">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/css/style.css"> <!-- Add your custom styles file -->
+    <link rel="stylesheet" href="assets/styles/css/responsive.css">
+    <link rel="stylesheet" href="assets/styles/fonts/Cabin_Condensed-Regular.ttf">
+    <link rel="stylesheet" href="assets/styles/fonts/CrimsonPro-Regular.ttf">
+    <link rel="stylesheet" href="assets/styles/fonts/OpenSans_SemiCondensed-Bold.ttf">
+    <link rel="stylesheet" href="assets/styles/fonts/OpenSans-Regular.ttf">
+    <link rel="stylesheet" href="assets/styles/fonts/OpenSans_Condensed-Bold.ttf">
+ <style>
+  .video-slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slick-dots {
+  bottom: -20px;
+}
+
+.slick-dots li button {
+  background-color: #fff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slick-dots li button.slick-active {
+  background-color: #000;
+}
+
+ </style>
+</head>
+<body>
+  <div class="video-slider">
+    <div class="slide">
+      <img src="your-thumbnail-image1.jpg" alt="Video 1 Thumbnail">
+      <div class="play-button"></div>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="slide">
+      <img src="your-thumbnail-image2.jpg" alt="Video 2 Thumbnail">
+      <div class="play-button"></div>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="slide">
+      <img src="your-thumbnail-image3.jpg" alt="Video 3 Thumbnail">
+      <div class="play-button"></div>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+  <script>
+    $('.video-slider').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  customPaging: function(slick, index) {
+    return '<span></span>';
+  }
+});
+
+$('.play-button').click(function() {
+  $(this).parent().find('iframe').attr('src', $(this).parent().find('iframe').attr('src') + '?autoplay=1');
+  $(this).hide();
+});
+
+  </script>
+</body>
+</html>

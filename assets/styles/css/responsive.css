@@ -1,0 +1,51 @@
+
+@media (min-width: 990px) {
+    .navbar-brand {
+      padding-left: 40px;
+    
+    }
+    
+    .nav-btn-contact{
+       padding-right: 40px;
+    }
+    
+    
+    .btn-home-packages{
+        font-size: x-large;
+      }
+    
+    }
+    
+    @media (max-width: 989px) {
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        text-align: justify center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        
+      }
+    .hero h4 {
+        font-size: 1rem;
+        text-align: justify center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+      }
+      .navbar-brand {
+      padding-left: 20px;
+    
+    }
+    .home-section{
+      height: 85vh;
+    
+    }
+    
+    .packagesSection{
+      height: 45vh;
+    }
+    
+    }
+    
+    
