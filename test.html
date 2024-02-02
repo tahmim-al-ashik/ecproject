@@ -20,27 +20,17 @@
     <link rel="stylesheet" href="assets/styles/fonts/OpenSans-Regular.ttf">
     <link rel="stylesheet" href="assets/styles/fonts/OpenSans_Condensed-Bold.ttf">
  <style>
+  
   .slider {
         width: 90%;
-        /* margin: 100px auto; */
+      
     }
 
     .slick-slide {
       margin: 0px 20px;
     }
 
-    /* .slick-slide img {
-      width: 100%;
-    } */
-
-    /* .slick-prev:before,
-    .slick-next:before {
-      font-size: 24px; 
-    color: #f7f7f7; */
-     /* Change the color to your desired color */
-    /* background-color: #ffffff; */
-     /* Change the background color if needed */
-    /* } */
+   
 
 
     .slick-slide {
@@ -49,29 +39,22 @@
     }
     
     .slick-active {
-      opacity: .5;
+      opacity: 1;
     }
 
     .slick-current {
       opacity: 1;
     }
-    /* .slick-dots li:not(:first-child):not(:nth-child(2)) {
-    display: none;
-} */
-.slick-dots {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-        margin: 0 0; /* Adjust the margin as needed */
-    }
+  
 
     .slick-dots li {
         margin: 0 5px; /* Adjust the margin between dots as needed */
     }
+   
+    .slick-dots li button {
 
-    .slick-dots button {
-        border: 2px solid #ccc; /* Set the outline color for inactive dots */
+        color:#5AEAF5;
+        border: 2px solid #10b0cc; 
         background-color: transparent; /* Set the background color for inactive dots */
         width: 12px;
         height: 12px;
@@ -79,17 +62,21 @@
         cursor: pointer;
     }
 
+ 
+
     .slick-dots button:hover {
-        border-color: #0e0e0e; /* Set the hover outline color for inactive dots */
+        border-color: #0e0e0e; 
+        /* color:#10b0cc; */
     }
 
-    .slick-dots .slick-active button {
-        background-color: #ccc; /* Set the fill color for the active dot */
-        border-color: #ccc; /* Set the border color for the active dot */
-    }
+ .slick-dots .slick-active button {
+        background-color: #5AEAF5; 
+        border-color: #10b0cc;
+    } 
+
 
 .custom-prev,
-    .custom-next {
+.custom-next {
         width: 20px;
         height: 20px;
         background-color: transparent; /* Set the background color */
@@ -160,7 +147,7 @@
               </section>
             
               
-              <!-- testttttt -->
+           
   
            
               
@@ -181,14 +168,15 @@
      
         slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             arrows: true,
             dots: true,
             centerMode: true,
             centerPadding: '0',
-            prevArrow: '<button type="button" class="custom-prev"></button>',
+            
             nextArrow: '<button type="button" class="custom-next"></button>',
+            prevArrow: '<button type="button" class="custom-prev"></button>',
             responsive: [
                 {
                     breakpoint: 768,
@@ -207,5 +195,7 @@
   
     });
 </script>
+
+
 </body>
 </html>

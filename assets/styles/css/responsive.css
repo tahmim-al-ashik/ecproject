@@ -1,4 +1,15 @@
 
+@media(max-width:1200px ){
+
+.custom-iframe{
+  width: 14rem;
+  height: 10rem;
+  border-radius: 1rem;
+
+ }
+
+}
+
 @media (min-width: 990px) {
     .navbar-brand {
       padding-left: 40px;
@@ -41,11 +52,46 @@
       height: 85vh;
     
     }
+  
     
     .packagesSection{
-      height: 45vh;
+      height: 60vh;
     }
+      .card-img-custom{
+
+      height:25rem;
+      border-radius: 1rem;
+    }
+
+ 
+    .img-text-over-h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .img-text-over-h5 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight:300;
+      margin-bottom: 20px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+   
+   
     
     }
+    @media(max-width: 768px){
+      .custom-iframe{
+        width: 17rem;
+        height: 11rem;
+        border-radius: 1rem;
+      
+       }
+       .home-section{
+        height: 80vh;
+      
+      }
     
-    
+      
+    }
