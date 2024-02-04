@@ -353,9 +353,6 @@ position: absolute;
   margin-bottom: 2rem;
 
  }
-
- 
-
  .image-container-aboutus {
   overflow: hidden;
 }
@@ -367,4 +364,93 @@ position: absolute;
   border: none; /* Remove the border */
   margin-bottom: 2rem;
   margin-top: 1rem;
+}
+/* end of third section */
+/* start of fourth section */
+.main-packages-section{
+  background-image: url('/assets/img/featuresbackrgound.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  /* background-repeat: repeat-y; */
+}
+
+.main-packages-section-h2{
+  padding-top: 2rem;
+  color:#5AEAF5;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-packages-section-h1{
+
+    color:#f7f7f7;
+    font-family: 'Crimson Pro', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+ 
+}
+.main-packages-section-h6{
+  color:#f1f1f1;
+  font-weight:normal;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 2rem;
+  
+
+}
+/* .services-slider-img{
+  width: 200px;
+  height: 250px;
+} */
+
+/* end of fourth section */
+
+/* start of footer section */
+.main-footer{
+  background-image: url('/assets/img/footer.png');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  /* background-repeat: repeat-y; */
+}
+
+.logo-container{
+  margin-top: 3rem;
+}
+.footer-logo{
+  height: 130px;
+  width: 116px;
+}
+
+.list-container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.list-container-footer ul li {
+  margin: 0 10px; /* Adjust the spacing between items */
+}
+.footer-paragraph{
+  text-align: center;
 }
