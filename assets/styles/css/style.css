@@ -21,7 +21,7 @@
 
 .custom-navbar{
       background-color:var(--primary-color);
-      font-family:"Cabin_Condensed-Regular",sans-serif;
+      font-family: 'Cabin', sans-serif;
   }
   .navbar-nav .nav-item.active .nav-link {
     color: var(--secondary-color); /* Change to your desired active text color */
@@ -105,7 +105,7 @@ color: var(--secondary-color); /* Change to your desired hover text color */
     font-size: 3rem;
     color: #ffffff;
     text-align: center;
-    font-family: 'CrimsonPro-Regular', sans-serif;
+    font-family: 'Crimson Pro', serif;
     font-weight:600;
     line-height: 2.6rem;
     
@@ -117,7 +117,7 @@ color: var(--secondary-color); /* Change to your desired hover text color */
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-family: 'OpenSans_SemiCondensed-Bold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
   }
 
@@ -423,8 +423,9 @@ position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
   text-align: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* background-repeat: repeat-y; */
 }
 
@@ -439,6 +440,8 @@ position: absolute;
 .list-container-footer {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .list-container-footer ul {
@@ -451,6 +454,79 @@ position: absolute;
 .list-container-footer ul li {
   margin: 0 10px; /* Adjust the spacing between items */
 }
+
+.list-container-footer ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Set the default link color */
+  transition: color 0.3s ease; /* Add a smooth transition effect on color change */
+  font-family: 'Cabin', sans-serif;
+  font-size: 1rem;
+  font-weight:lighter;
+
+}
+
+.list-container-footer ul li a:hover {
+  color: #5AEAF5; /* Set the color you want on mouse hover */
+}
 .footer-paragraph{
   text-align: center;
+  color: #ffffff;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-item {
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
+
+.icon-item img {
+  max-width: 100%; /* Ensure the icon does not exceed its container's width */
+  height: 2rem; /* Maintain the aspect ratio of the icon */
+}
+.h1text{
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.icon-link img {
+  max-width: 100%; /* Ensure the icon does not exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the icon */
+  transition: filter 0.3s ease; /* Add a smooth transition effect on filter change */
+}
+
+.icon-link:hover img {
+  filter: grayscale(100%); /* Change the filter property for the desired hover effect */
+   color:#52DAE5;
+}
+
+
+.footer-copyright {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.copyright p {
+  margin: 0;
+  color: inherit; /* Inherit the color from the parent element */
+  transition: color 0.3s ease; /* Add a smooth transition effect on color change */
+}
+
+.copyright p:hover {
+  color: var(--secondary-color); /* Set the color you want on mouse hover */
 }
