@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #021216;
+    --secondary-color: #5AEAF5;
+    --third-color: #fff;
+    --fourth-color: #f39c12;
+  }
+  
+
+/* home section css */
+
+
+
+
+
+.custom-navbar{
+      background-color:var(--primary-color);
+      font-family: 'Cabin', sans-serif;
+  }
+  .navbar-nav .nav-item.active .nav-link {
+    color: var(--secondary-color); /* Change to your desired active text color */
+    /* background-color: #007bff;  */
+  }
+
+  /* Custom styles for non-active items */
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* Change to your desired text color */
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+color: var(--secondary-color); /* Change to your desired hover text color */
+/* background-color: #007bff;  */
+/* Change to your desired hover background color */
+}
+
+
+  /* Custom styles for toggler icon button color */
+  .navbar-toggler-icon {
+    background-color: var(--secondary-color);
+    border: 2px solid #34acdb; /* Your custom border color code */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  }
+
+  /* Custom styles for toggler icon button color on hover */
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #327d83; /* Your custom hover color code */
+  }
+
+.packages-button{
+    color: var(--secondary-color); /* Your custom text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid var(--secondary-color); /* Your custom outline color code */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition on hover */
+  }
+
+  .packages-button:hover {
+    color: #fdfdfd; /* Your custom text color on hover */
+    /* background-color: #ffffff;  */
+    /* Your custom background color on hover */
+    background: linear-gradient(to right, var(--secondary-color), #0F768D);
+  }
+
+
+  .btn-home-packages{
+    color: #ffffff; /* Your custom text color */
+    background: linear-gradient(to right, var(--secondary-color), #11687B);
+    opacity: 0.9; /* Transparent background */
+    border: 2px solid var(--secondary-color); /* Your custom outline color code */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition on hover */
+    font-family: 'OpenSans_Condensed-Bold', sans-serif;
+    font-weight: 600;
+  }
+
+  .btn-home-packages:hover {
+    color: #ffffff; /* Your custom text color on hover */
+    /* background-color: #ffffff;  */
+    /* Your custom background color on hover */
+    background: linear-gradient(to right, var(--secondary-color), #11687B);
+  }
+
+
+  .hero {
+    background-image: url("/assets/img/home.png");
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-attachment: fixed;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Crimson Pro', serif;
+    font-weight:600;
+    line-height: 2.6rem;
+    
+  }
+
+  .hero h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+
+  .hero button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero button:hover {
+    background-color: #ddd;
+  }
+
+
+  /* end of home section */
+/* 
+@media (max-width: 990px) {
+.navbar-brand {
+  padding-left: 40px;
+
+}
+/* 
+.nav-btn-contact{
+   padding-right: 40px;
+} */
+/* } * */
+/* start of second section */
+.packagesSection {
+    background-image: url('/assets/img/featuresbackrgound.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    /* background-repeat: repeat-y; */
+  }
+
+  /* .packages-section-content {
+    color: #fff;
+  } */
+
+  .custom-card {
+
+     
+    /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    /* box-shadow: 0 0 10px rgba(63, 63, 63, 0.3);  */
+    /* Shadow effect */
+    overflow: hidden; /* Hide overflow content */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border-radius: 15px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 0; */
+    /* margin-top: 2%; */
+   
+    padding-top: 0; 
+    width:100%;
+    /* height: 50vh; */
+    background-color: transparent !important;
+
+  
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-top: 2rem;
+    color: #dadada; /* Text color */
+    text-align: center;
+ 
+  }
+
+  .img-text-over-h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .img-text-over-h5 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight:300;
+    margin-bottom: 20px;
+  }
+
+.custom-iframe{
+   width: 17rem;
+   height: 12rem;
+   border-radius: 1rem;
+
+  }
+
+
+/* start of slick video controller */
+.slider {
+  width: 90%;
+
+}
+
+.slick-slide {
+margin: 0px 20px;
+
+}
+
+
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+
+.slick-active {
+opacity: 1;
+}
+
+.slick-current {
+opacity: 1;
+}
+
+
+.slick-dots li {
+  margin: 0 5px;
+  margin-top: 5rem; /* Adjust the margin between dots as needed */
+  
+}
+
+
+.custom-prev,
+.custom-next {
+  width: 20px;
+  height: 20px;
+  background-color: transparent; /* Set the background color */
+ 
+  background-size: cover;
+  border: none;
+ 
+  
+  
+}
+.custom-prev{
+
+background-image: url('/assets/img/left.png'); /* Set the path to your custom icon */
+left: 0;
+cursor: pointer;
+top: 50%;
+transform: translateY(-50%);
+position: absolute;
+}
+.custom-next {
+  background-image: url('/assets/img/right.png'); /* Set the path to your custom icon */
+  right: 0;   
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+/* end of slick video controller */
+
+/* end of second section */
+/* 
+  ajdnhakndc */
+
+/* start of third section */
+
+.aboutSection {
+  background-image: url('/assets/img/featuresbackrgound.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  /* background-repeat: repeat-y; */
+}
+
+ .aboutSection-h1{
+  color:#52DAE5;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: left;
+
+ }
+
+ .aboutSection-h2{
+  color:#f7f7f7;
+  font-family: 'Crimson Pro', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+ }
+ .aboutSection-h3{
+  color:#f7f7f7;
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1rem;
+  font-weight:lighter;
+  text-align: left;
+
+ }
+
+ .experience-row{
+  margin-top: 1.9rem;
+ }
+
+ .experience-h1{
+  color:#5AEAF5;
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
+
+ }
+ .experience-h6{
+  color:#f1f1f1;
+  font-weight:normal;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 2rem;
+
+ }
+ .image-container-aboutus {
+  overflow: hidden;
+}
+
+.image-container-aboutus img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none; /* Remove the border */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+/* end of third section */
+
+
+/* start of fourth section */
+.main-packages-section{
+  background-image: url('/assets/img/featuresbackrgound.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  /* background-repeat: repeat-y; */
+}
+
+.main-packages-section-h2{
+  padding-top: 2rem;
+  color:#5AEAF5;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-packages-section-h1{
+
+    color:#f7f7f7;
+    font-family: 'Crimson Pro', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+ 
+}
+.main-packages-section-h6{
+  color:#f1f1f1;
+  font-weight:normal;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 2rem;
+  
+
+}
+
+
+.center {
+  text-align: center;
+}
+
+.slick-slide {
+  width: 6rem;
+  height: 15rem;
+  margin: 0 auto;
+}
+
+.slick-slide img .services-slider-img{
+  height: 5rem;
+  width: 5rem;
+  display: inline;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+
+/* .services-slider-img{
+  width: 200px;
+  height: 250px;
+} */
+
+/* end of fourth section */
+
+
+
+
+
+
+/* start of footer section */
+.main-footer{
+  background-image: url('/assets/img/footer.png');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  text-align: center;
+  /* background-attachment: fixed; */
+  /* background-repeat: repeat-y; */
+}
+
+.logo-container{
+  margin-top: 3rem;
+}
+.footer-logo{
+  height: 130px;
+  width: 116px;
+}
+
+.list-container-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.list-container-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.list-container-footer ul li {
+  margin: 0 10px; /* Adjust the spacing between items */
+}
+
+.list-container-footer ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Set the default link color */
+  transition: color 0.3s ease; /* Add a smooth transition effect on color change */
+  font-family: 'Cabin', sans-serif;
+  font-size: 1rem;
+  font-weight:lighter;
+
+}
+
+.list-container-footer ul li a:hover {
+  color: #5AEAF5; /* Set the color you want on mouse hover */
+}
+.footer-paragraph{
+  text-align: center;
+  color: #ffffff;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-item {
+  margin: 0 10px; /* Adjust the spacing between icons */
+}
+
+.icon-item img {
+  max-width: 100%; /* Ensure the icon does not exceed its container's width */
+  height: 2rem; /* Maintain the aspect ratio of the icon */
+}
+.h1text{
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.icon-link img {
+  max-width: 100%; /* Ensure the icon does not exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the icon */
+  transition: filter 0.3s ease; /* Add a smooth transition effect on filter change */
+}
+
+.icon-link:hover img {
+  filter: grayscale(100%); /* Change the filter property for the desired hover effect */
+   color:#52DAE5;
+}
+
+
+.footer-copyright {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.copyright p {
+  margin: 0;
+  color: inherit; /* Inherit the color from the parent element */
+  transition: color 0.3s ease; /* Add a smooth transition effect on color change */
+}
+
+.copyright p:hover {
+  color: var(--secondary-color); /* Set the color you want on mouse hover */
+}
